@@ -44,7 +44,7 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () {
     Route::get('/admin/dashboard', [DashboardController::class,'index'])->name('admin.dashboard');
-    Route::get('/admin/users',[UserController::class,'index'])->name('admin.users');
+    Route::resource('users', UserController::class);
 });
 
 require __DIR__.'/auth.php';

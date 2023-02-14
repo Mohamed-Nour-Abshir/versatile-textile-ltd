@@ -53,7 +53,7 @@
             <hr class="sidebar-divider">
             <!-- Nav Item - Users -->
             <li class="nav-item">
-                <a class="nav-link" href="{{route('admin.users')}}">
+                <a class="nav-link" href="{{route('users.index')}}">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Manage Users</span></a>
             </li>

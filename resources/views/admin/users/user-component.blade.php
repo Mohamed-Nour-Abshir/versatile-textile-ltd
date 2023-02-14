@@ -28,10 +28,16 @@
                                     <td>{{$user->phone}}</td>
                                     <td>{{$user->address}}</td>
                                     <td>{{ date('d/m/Y', strtotime($user->created_at)) }}</td>
-                                    <td @if ($user->role === 1) @class(['text-success h5'])@endif>@if ($user->role === 1) Admin @else User @endif</td>
+                                    <td @if ($user->role === 1) @class(['text-danger'])@endif>@if ($user->role === 1) Admin @else User @endif</td>
                                     <td>
-                                        <a href=""><i class="fas fa-edit"></i></a>
-                                        <a href=""><i class="fas fa-trash text-danger ml-3"></i></a>
+                                        <a href="{{route('users.edit',$user->id)}}" class="btn btn-success btn-circle mb-2"><i class="fas fa-edit"></i></a>
+                                        <form action="{{route('users.destroy',$user->id)}}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            @if ($user->role !== 1)
+                                                <button type="submit" onclick="return confirm('Are you sure to Delete this User?')" class="btn btn-danger btn-circle"><i class="fas fa-trash"></i></button>
+                                            @endif
+                                        </form>
                                     </td>
                                 </tr>
                             @endforeach
