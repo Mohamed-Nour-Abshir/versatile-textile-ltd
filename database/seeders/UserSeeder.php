@@ -21,6 +21,8 @@ class UserSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'versatile',
             'email' => 'info@versatile.com',
+            'phone' => '01713044093',
+            'address' => '89/2, Chaydana, Degerchala Road, National University, Gazipur',
             'password' => Hash::make('123456789'),
         ]);
     }
