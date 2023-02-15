@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\HomeSlider;
 use Illuminate\Http\Request;
 
 class FrontEndController extends Controller
 {
     //Home Page
     public function index(){
-        return View('home-component');
+        $sliders = HomeSlider::all();
+        return View('home-component',compact('sliders'));
     }
     //About Page
     public function about(){

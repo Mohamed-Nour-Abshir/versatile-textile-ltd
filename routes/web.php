@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\HomeSliderController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\ProfileController;
@@ -45,6 +46,7 @@ Route::middleware('auth')->group(function () {
 Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () {
     Route::get('/admin/dashboard', [DashboardController::class,'index'])->name('admin.dashboard');
     Route::resource('users', UserController::class);
+    Route::resource('sliders', HomeSliderController::class);
 });
 
 require __DIR__.'/auth.php';

@@ -3,85 +3,24 @@
 <!-- hero section start  -->
 <main class=" ">
     <div class="owl-carousel owl-one owl-theme">
-      <div class="item item-one">
-        <div class="transparent-dark h-100">
-          <div class="container">
-            <!-- <div class="container-fluid"> -->
-            <div
-              class="carousel-one-text"
-              data-aos="fade-down-right"
-              data-aos-once="true"
-              data-aos-offset="300"
-              data-aos-once="true"
-              data-aos-easing="ease-in-sine"
-            >
-              <h1 class="fw-bold">
-                DISCOVER THE WORLD <br />
-                OF BUSINESS
-              </h1>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur a quas nesciunt saepe
-                modi tempore aliquid exercitationem placeat.
-              </p>
-              <a
-                name=""
-                id=""
-                class="btn my-color my-color-hover borrad rounded fw-lighter me-3 btn-lg ps-3 pe-3"
-                href="/about"
-                role="button"
-                >Read More</a
-              >
-              <a
-                name=""
-                id=""
-                class="btn my-color my-color-hover borrad rounded fw-lighter me-3 btn-lg ps-3 pe-3"
-                href="/contact"
-                role="button"
-                >Contact Us</a
-              >
-              <!-- </div> -->
+        @foreach ($sliders as $slider)
+            <div class="item item-one" style='background-image: url("{{asset('images/HomeSliders')}}/{{$slider->image}}") ;'>
+                <div class="transparent-dark h-100">
+                <div class="container">
+                    <!-- <div class="container-fluid"> -->
+                    <div class="carousel-one-text" data-aos="fade-down-right" data-aos-once="true" data-aos-offset="300" data-aos-once="true" data-aos-easing="ease-in-sine">
+                    <h1 class="fw-bold">{{$slider->title}}</h1>
+                    <p>{{$slider->description}}</p>
+                    <a class="btn my-color my-color-hover borrad rounded fw-lighter me-3 btn-lg ps-3 pe-3" href="/about" role="button">Read More</a>
+                    <a class="btn my-color my-color-hover borrad rounded fw-lighter me-3 btn-lg ps-3 pe-3" href="/contact" role="button">Contact Us</a>
+                    <!-- </div> -->
+                    </div>
+                </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="item item-two">
-        <div class="transparent-dark h-100">
-          <div class="container">
-            <!-- <div class="container-fluid"> -->
-            <div
-              class="carousel-two-text"
-              data-aos="fade-down"
-              data-aos-offset="300"
-              data-aos-once="true"
-              data-aos-easing="ease-in-sine"
-            >
-              <h1 class="">MEET OUR BRAND NEW SOLUTION</h1>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur a quas nesciunt saepe
-                modi tempore quas nesciunt saepe modi tempore aliquid
-                exercitationem placeat.
-              </p>
-              <a
-                name=""
-                id=""
-                class="my-color my-color-hover btn borrad rounded fw-lighter me-3 btn-lg ps-3 pe-3"
-                href="/about"
-                role="button"
-                >Read More</a
-              >
-              <a
-                name=""
-                id=""
-                class="my-color my-color-hover btn fw-lighter me-3 btn-lg ps-3 pe-3"
-                href="/contact"
-                role="button"
-                >Contact Us</a
-              >
-            </div>
-            <!-- </div> -->
-          </div>
-        </div>
-      </div>
+        @endforeach
+
+
     </div>
   </main>
   <!-- hero section end -->

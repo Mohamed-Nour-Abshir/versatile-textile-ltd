@@ -58,6 +58,13 @@
                     <span>Manage Users</span></a>
             </li>
 
+            <hr class="sidebar-divider">
+            <!-- Nav Item - Users -->
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('sliders.index')}}">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Manage Home Sliders</span></a>
+            </li>
             <hr class="sidebar-divider d-none d-md-block">
 
             <!-- Nav Item - Pages Collapse Menu -->
