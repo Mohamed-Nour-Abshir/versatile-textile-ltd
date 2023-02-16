@@ -28,8 +28,8 @@
         @if ($product->product_type === "boysItem")
             <div class="col-md-6 p-5 border-bottom">
                 <div class="row">
-                    <div class="col-md-6">
-                        <img src="{{asset('images/Products')}}/{{$product->image}}" class="img-fluid rounded" style="height:300px;" alt="">
+                    <div class="col-md-6 pe-5">
+                        <img src="{{asset('images/Products')}}/{{$product->image}}" class="img-fluid rounded" alt="">
                     </div>
                     <div class="col-md-6">
                         <p class="text-dark">S/N: 0{{++$i}}</p>

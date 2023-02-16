@@ -189,164 +189,33 @@
         data-aos-easing="ease-in-sine"
       >
         <div class="owl-carousel col owl-two owl-theme">
-          <div class="item clint rounded my-color-hover col p-5 border border-light position-relative">
-            <div class="d-flex justify-content-center">
-              <img src="images/clint/tesco.png" alt="" />
-              <a class="position-absolute text-decoration-none" href=""
-                ><h3 class="display-6">C&A</h3></a
-              >
-            </div>
-          </div>
 
-          <div class="item clint rounded my-color-hover col p-5 border border-light position-relative">
-            <div class="d-flex justify-content-center">
-              <img src="images/clint/Esprit.png" alt="" />
-              <a class="position-absolute text-decoration-none" href=""
-                ><h3 class="display-6">C&A</h3></a
-              >
-            </div>
-          </div>
+            @foreach ($brands as $brand)
+                <div class="item clint rounded my-color-hover col p-5 border border-light my-color-hover position-relative">
+                    <div class="d-flex justify-content-center">
+                    <img src="{{asset('images/Brand')}}/{{$brand->image}}" alt="" />
+                    <a class="position-absolute text-decoration-none" href=""
+                        ><h3 class="display-6">{{$brand->name}}</h3></a
+                    >
+                    </div>
+                </div>
+            @endforeach
 
-          <div class="item clint rounded my-color-hover col p-5 border border-light my-color-hover position-relative">
-            <div class="d-flex justify-content-center">
-              <img src="images/clint/George.png" alt="" />
-              <a class="position-absolute text-decoration-none" href=""
-                ><h3 class="display-6">C&A</h3></a
-              >
-            </div>
-          </div>
-
-          <div class="item clint rounded my-color-hover col p-5 border border-light my-color-hover position-relative">
-            <div class="d-flex justify-content-center">
-              <img src="images/clint/Lidl.png" alt="" />
-              <a class="position-absolute text-decoration-none" href=""
-                ><h3 class="display-6">C&A</h3></a
-              >
-            </div>
-          </div>
-
-          <div class="item clint rounded my-color-hover col p-5 border border-light my-color-hover position-relative">
-            <div class="d-flex justify-content-center">
-              <img src="images/clint/LPPlogo.jpg" alt="" />
-              <a class="position-absolute text-decoration-none" href=""
-                ><h3 class="display-6">C&A</h3></a
-              >
-            </div>
-          </div>
-
-          <div class="item clint rounded my-color-hover col p-5 border border-light my-color-hover position-relative">
-            <div class="d-flex justify-content-center">
-              <img src="images/clint/NextSourcing.png" alt="" />
-              <a class="position-absolute text-decoration-none" href=""
-                ><h3 class="display-6">C&A</h3></a
-              >
-            </div>
-          </div>
-
-          <div class="item clint rounded my-color-hover col p-5 border border-light my-color-hover position-relative">
-            <div class="d-flex justify-content-center">
-              <img src="images/clint/OVS_logo.jpg" alt="" />
-              <a class="position-absolute text-decoration-none" href=""
-                ><h3 class="display-6">C&A</h3></a
-              >
-            </div>
-          </div>
 
         </div>
       </div>
-      <div
-        class="row justify-content-center text-center gap-5 p-1"
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-once="true"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="row justify-content-center text-center gap-5 p-1" data-aos="fade-right" data-aos-offset="300" data-aos-once="true" data-aos-easing="ease-in-sine">
         <div class="owl-carousel owl-three owl-theme">
-          <div
-            class="item clint rounded my-color-hover col p-5 border border-light position-relative"
-          >
-            <div class="d-flex justify-content-center">
-              <img
-                class="bg-light"
-                src="images/clint/C&Alogo2011.png"
-                alt=""
-              />
-              <a class="position-absolute text-decoration-none" href=""
-                ><h3 class="display-6">C&A</h3></a
-              >
-            </div>
-          </div>
-          <div
-            class="item clint rounded my-color-hover col p-5 border border-light position-relative"
-          >
-            <div class="d-flex justify-content-center">
-              <img src="images/clint/Carhartt.png" alt="" />
-              <a class="position-absolute text-decoration-none" href=""
-                ><h3 class="display-6">C&A</h3></a
-              >
-            </div>
-          </div>
-          <div
-            class="item clint rounded my-color-hover col p-5 border border-light position-relative"
-          >
-            <div class="d-flex justify-content-center">
-              <img src="images/clint/tesco.png" alt="" />
-              <a class="position-absolute text-decoration-none" href=""
-                ><h3 class="display-6">C&A</h3></a
-              >
-            </div>
-          </div>
-          <div
-            class="item clint rounded my-color-hover col p-5 border border-light position-relative"
-          >
-            <div class="d-flex justify-content-center">
-              <img src="images/clint/ElCorteIngles.png" alt="" />
-              <a class="position-absolute text-decoration-none" href=""
-                ><h3 class="display-6">C&A</h3></a
-              >
-            </div>
-          </div>
-          <div
-            class="item clint rounded my-color-hover col p-5 border border-light position-relative"
-          >
-            <div class="d-flex justify-content-center">
-              <img src="images/clint/Esprit.png" alt="" />
-              <a class="position-absolute text-decoration-none" href=""
-                ><h3 class="display-6">C&A</h3></a
-              >
-            </div>
-          </div>
-          <div
-            class="item clint rounded my-color-hover col p-5 border border-light my-color-hover position-relative"
-          >
-            <div class="d-flex justify-content-center">
-              <img src="images/clint/G-Star.png" alt="" />
-              <a class="position-absolute text-decoration-none" href=""
-                ><h3 class="display-6">C&A</h3></a
-              >
-            </div>
-          </div>
-          <div
-            class="item clint rounded my-color-hover col p-5 border border-light my-color-hover position-relative"
-          >
-            <div class="d-flex justify-content-center">
-              <img src="images/clint/George.png" alt="" />
-              <a class="position-absolute text-decoration-none" href=""
-                ><h3 class="display-6">C&A</h3></a
-              >
-            </div>
-          </div>
-          <div
-            class="item clint rounded my-color-hover col p-5 border border-light my-color-hover position-relative"
-          >
-            <div class="d-flex justify-content-center">
-              <img src="images/clint/H&M.png" alt="" />
-              <a class="position-absolute text-decoration-none" href=""
-                ><h3 class="display-6">C&A</h3></a
-              >
-            </div>
-          </div>
+            @foreach ($brands as $item)
+                <div class="item clint rounded my-color-hover col p-5 border border-light position-relative">
+                <div class="d-flex justify-content-center">
+                    <img class="bg-light img-fluid" src="{{asset('images/Brand')}}/{{$item->image}}" alt="" >
+                    <a class="position-absolute text-decoration-none" href=""><h3 class="display-6">{{$item->name}}</h3></a>
+                </div>
+                </div>
+            @endforeach
         </div>
+
       </div>
     </section>
   </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Brand;
 use App\Models\HomeSlider;
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -12,7 +13,8 @@ class FrontEndController extends Controller
     public function index(){
         $sliders = HomeSlider::all();
         $products = Product::all();
-        return View('home-component',compact('sliders','products'));
+        $brands = Brand::all();
+        return View('home-component',compact('sliders','products','brands'));
     }
     //About Page
     public function about(){

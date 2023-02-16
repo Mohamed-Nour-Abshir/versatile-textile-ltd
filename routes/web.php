@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\HomeSliderController;
 use App\Http\Controllers\Admin\UserController;
@@ -55,6 +56,7 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () 
     Route::resource('users', UserController::class);
     Route::resource('sliders', HomeSliderController::class);
     Route::resource('products',ProductController::class);
+    Route::resource('brand', BrandController::class);
 });
 
 require __DIR__.'/auth.php';
