@@ -9,10 +9,10 @@
                 <div class="container">
                     <!-- <div class="container-fluid"> -->
                     <div class="carousel-one-text" data-aos="fade-down-right" data-aos-once="true" data-aos-offset="300" data-aos-once="true" data-aos-easing="ease-in-sine">
-                    <h1 class="fw-bold">{{$slider->title}}</h1>
-                    <p>{{$slider->description}}</p>
-                    <a class="btn my-color my-color-hover borrad rounded fw-lighter me-3 btn-lg ps-3 pe-3" href="/about" role="button">Read More</a>
-                    <a class="btn my-color my-color-hover borrad rounded fw-lighter me-3 btn-lg ps-3 pe-3" href="/contact" role="button">Contact Us</a>
+                    {{-- <h1 class="fw-bold">{{$slider->title}}</h1>
+                    <p>{{$slider->description}}</p> --}}
+                    {{-- <a class="btn my-color my-color-hover borrad rounded fw-lighter me-3 btn-lg ps-3 pe-3" href="/about" role="button">Read More</a>
+                    <a class="btn my-color my-color-hover borrad rounded fw-lighter me-3 btn-lg ps-3 pe-3" href="/contact" role="button">Contact Us</a> --}}
                     <!-- </div> -->
                     </div>
                 </div>
@@ -38,16 +38,16 @@
       >
         <div class="display-1 text-center pb-4">Know US</div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          commodi libero inventore earum facilis molestias deserunt excepturi
-          maxime, nam labore odit quaerat temporibus quisquam architecto totam
-          quas accusantium vel minus!
+            We at Versatile Textiles manufacture nano silver based eco
+            safe Versatile Antimicrobial Agent applicable to all textiles
+            at very economical price. Our versatile Antimicrobial finish
+            for textiles helps in making anti viral, anti bacterial, and
+            anti fungal textile products.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          commodi libero inventore earum facilis molestias deserunt excepturi
-          maxime, nam labore odit quaerat temporibus quisquam architecto totam
-          quas accusantium vel minus!
+            We are serious about creating fresh and hygienic textile products.
+            We exceed our customer’s expectations with better quality products
+            To Achieve Quality Goal Through Continuous, Improve In Process And Long Term Sustainable Customers Satisfaction.
         </p>
       </div>
       <div
@@ -89,21 +89,21 @@
           <div class="heading">
             <div class="fs-1">Our Factory</div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Veritatis commodi libero inventore earum facilis molestias
-              deserunt excepturi maxime, nam labore odit quaerat temporibus
-              quisquam architecto totam quas accusantium vel minus!
+                We at Versatile Textiles manufacture nano silver based eco
+                safe Versatile Antimicrobial Agent applicable to all textiles
+                at very economical price. Our versatile Antimicrobial finish
+                for textiles helps in making anti viral, anti bacterial, and
+                anti fungal textile products.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Veritatis commodi libero inventore earum facilis molestias
-              deserunt excepturi maxime, nam labore odit quaerat temporibus
-              quisquam architecto totam quas accusantium vel minus!
+                We are serious about creating fresh and hygienic textile products.
+                We exceed our customer’s expectations with better quality products.
+                To Achieve Quality Goal Through Continuous, Improve In Process And Long Term Sustainable Customers Satisfaction.
             </p>
           </div>
         </div>
         <div class="col-12 col-lg-6">
-          <img class="img-fluid rounded-4" src="images/banner.jpg" alt="" />
+          <img class="img-fluid rounded-4" src="images/slider-4.jpg" alt="" style="height:300px;">
         </div>
       </div>
     </div>
@@ -120,173 +120,30 @@
     data-aos-easing="ease-in-sine"
   >
     <div class="plan-main">
-      <div class="display-1 text-center">
-        Our Products
+      <div class="display-3 text-center">
+        Product Line
         <div class="nav-line"></div>
         <hr class="border border-light" />
       </div>
       <div class="row justify-content-center text-center plan gap-4 p-3">
-        <div
-          class="col border product-box border-light rounded p-0 shadow"
-          data-aos="fade-down-right"
-          data-aos-offset="300"
-          data-aos-once="true"
-          data-aos-easing="ease-in-sine"
-        >
-          <a class="product-link" href="pages/product/product-details.html">
-            <div class="product-images">
-              <div class="product-text">
-                <div class="product-text-child">
-                  <h4>This is product</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Ad distinctio maxime labore recusandae perferendis ea?
-                  </p>
-                  <a class="btn btn-dark" href=""> Buy Now </a>
-                  <a class="btn btn-dark" href="">
-                    <i class="fa-solid fa-cart-plus"></i> Add to cart
-                  </a>
-                </div>
-              </div>
-              <img
-                class="img-fluid"
-                src="images/product/tshirt.png"
-                alt=""
-              />
-            </div>
-          </a>
-        </div>
-        <div
-          class="col border product-box border-light rounded p-0 shadow"
-          data-aos="fade-down-right"
-          data-aos-offset="300"
-          data-aos-once="true"
-          data-aos-easing="ease-in-sine"
-        >
-          <a class="product-link" href="pages/product/product-details.html">
-            <div class="product-images">
-              <div class="product-text">
-                <div class="product-text-child">
-                  <h4>This is product</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Ad distinctio maxime labore recusandae perferendis ea?
-                  </p>
-                  <a class="btn btn-dark" href=""> Buy Now </a>
-                  <a class="btn btn-dark" href="">
-                    <i class="fa-solid fa-cart-plus"></i> Add to cart
-                  </a>
-                </div>
-              </div>
-              <img class="img-fluid" src="images/product/tshirt.png" alt="" />
-            </div>
-          </a>
-        </div>
 
-        <div
-          class="col border product-box border-light rounded p-0 shadow"
-          data-aos="fade-down-right"
-          data-aos-offset="300"
-          data-aos-once="true"
-          data-aos-easing="ease-in-sine"
-        >
-          <a class="product-link" href="pages/product/product-details.html">
-            <div class="product-images">
-              <div class="product-text">
-                <div class="product-text-child">
-                  <h4>This is product</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Ad distinctio maxime labore recusandae perferendis ea?
-                  </p>
-                  <a class="btn btn-dark" href=""> Buy Now </a>
-                  <a class="btn btn-dark" href="">
-                    <i class="fa-solid fa-cart-plus"></i> Add to cart
-                  </a>
+        @foreach ($products as $product)
+            <div class="col border product-box border-light rounded p-0 shadow" data-aos="fade-down-right" data-aos-offset="300" data-aos-once="true" data-aos-easing="ease-in-sine">
+                <a class="product-link" href="pages/product/product-details.html">
+                <div class="product-images">
+                    <div class="product-text">
+                    <div class="product-text-child mt-5">
+                        <h4>{{$product->product_type}}</h4>
+                        <p>{{$product->description}}</p>
+                    </div>
+                    </div>
+                    <img class="img-fluid" src="{{asset('images/Products')}}/{{$product->image}}" alt="" />
                 </div>
-              </div>
-              <img class="img-fluid" src="images/product/tshirt.png" alt="" />
+                </a>
             </div>
-          </a>
-        </div>
-        <div
-          class="col border product-box border-light rounded p-0 shadow"
-          data-aos="fade-down-right"
-          data-aos-offset="300"
-          data-aos-once="true"
-          data-aos-easing="ease-in-sine"
-        >
-          <a class="product-link" href="pages/product/product-details.html">
-            <div class="product-images">
-              <div class="product-text">
-                <div class="product-text-child">
-                  <h4>This is product</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Ad distinctio maxime labore recusandae perferendis ea?
-                  </p>
-                  <a class="btn btn-dark" href=""> Buy Now </a>
-                  <a class="btn btn-dark" href="">
-                    <i class="fa-solid fa-cart-plus"></i> Add to cart
-                  </a>
-                </div>
-              </div>
-              <img class="img-fluid" src="images/product/tshirt.png" alt="" />
-            </div>
-          </a>
-        </div>
-        <div
-          class="col border product-box border-light rounded p-0 shadow"
-          data-aos="fade-down-right"
-          data-aos-offset="300"
-          data-aos-once="true"
-          data-aos-easing="ease-in-sine"
-        >
-          <a class="product-link" href="product/product-details.html">
-            <div class="product-images">
-              <div class="product-text">
-                <div class="product-text-child">
-                  <h4>This is product</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Ad distinctio maxime labore recusandae perferendis ea?
-                  </p>
-                  <a class="btn btn-dark" href=""> Buy Now </a>
-                  <a class="btn btn-dark" href="">
-                    <i class="fa-solid fa-cart-plus"></i> Add to cart
-                  </a>
-                </div>
-              </div>
-              <img class="img-fluid" src="images/product/tshirt.png" alt="" />
-            </div>
-          </a>
-        </div>
-        <div
-          class="col border product-box border-light rounded p-0 shadow"
-          data-aos="fade-down-right"
-          data-aos-offset="300"
-          data-aos-once="true"
-          data-aos-easing="ease-in-sine"
-        >
-          <a class="product-link" href="pages/product/product-details.html">
-            <div class="product-images">
-              <div class="product-text">
-                <div class="product-text-child">
-                  <h4>This is product</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Ad distinctio maxime labore recusandae perferendis ea?
-                  </p>
-                  <a class="btn btn-dark" href=""> Buy Now </a>
-                  <a class="btn btn-dark" href="">
-                    <i class="fa-solid fa-cart-plus"></i> Add to cart
-                  </a>
-                </div>
-              </div>
-              <img class="img-fluid" src="images/product/tshirt.png" alt="" />
-            </div>
-          </a>
-        </div>
+        @endforeach
+
+
         <div class="row justify-content-center align-items-center g-2 pb-5">
           <div class="col">
             <a class="btn btn-dark" href="pages/product/t-shirt.html"

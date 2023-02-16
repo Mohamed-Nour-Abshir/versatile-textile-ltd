@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\HomeSliderController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\FrontEndController;
+use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -47,6 +48,7 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () 
     Route::get('/admin/dashboard', [DashboardController::class,'index'])->name('admin.dashboard');
     Route::resource('users', UserController::class);
     Route::resource('sliders', HomeSliderController::class);
+    Route::resource('products',ProductController::class);
 });
 
 require __DIR__.'/auth.php';

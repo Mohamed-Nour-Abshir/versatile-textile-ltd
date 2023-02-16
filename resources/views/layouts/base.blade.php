@@ -60,8 +60,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <!-- <div class="container-fluid"> -->
           <a class="navbar-brand" href="/"
-            ><img class="logo-img rounded-2" src="images/Logo.jpg" alt="" />
-            VERSATILE</a
+            ><img class="logo-img" src="images/logo1.png" alt="" /></a
           >
           <button
             class="navbar-toggler"
@@ -105,14 +104,12 @@
                   class="dropdown-menu show-my my-color-hover my-color my-color-hover"
                 >
                   <li>
-                    <a class="dropdown-item" href="pages/product/t-shirt.html"
-                      >product/t-shirt</a
-                    >
+                    <a class="dropdown-item" href="#">Men's Item</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">Shirt</a></li>
-                  <li><a class="dropdown-item" href="#">Pant</a></li>
-                  <li><a class="dropdown-item" href="#">Sweetshirt</a></li>
-                  <li><a class="dropdown-item" href="#">Cort</a></li>
+                  <li><a class="dropdown-item" href="#">Boy's Item</a></li>
+                  <li><a class="dropdown-item" href="#">Girl's Item</a></li>
+                  <li><a class="dropdown-item" href="#">Kid's Item </a></li>
+                  <li><a class="dropdown-item" href="#">Ladies Item</a></li>
                   <li><a class="dropdown-item" href="#"></a></li>
                 </ul>
               </li>
