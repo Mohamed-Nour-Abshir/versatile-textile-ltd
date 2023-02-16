@@ -30,4 +30,38 @@ class FrontEndController extends Controller
     public function contact(){
         return View('contact-component');
     }
+    //Men's Item Page
+    public function mensItem()
+    {
+        $products = Product::all();
+        return view('mens-item-component',compact('products'));
+    }
+
+    //Boy's Item Page
+    public function boysItem()
+    {
+        $products = Product::all();
+        return view('boys-item-component',compact('products'));
+    }
+
+    //Girl's Item Page
+    public function girlsItem()
+    {
+        $products = Product::all();
+        return view('girls-item-component',compact('products'));
+    }
+
+    //Kid's Item Page
+    public function kidsItem()
+    {
+        $products = Product::all();
+        return view('kids-item-component',compact('products'));
+    }
+
+    //Ladies Item Page
+    public function ladiesItem()
+    {
+        $products = Product::all();
+        return view('ladies-item-component',compact('products'));
+    }
 }

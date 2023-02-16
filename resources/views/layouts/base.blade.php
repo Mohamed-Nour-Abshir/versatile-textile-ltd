@@ -100,17 +100,12 @@
                 >
                   Product
                 </a>
-                <ul
-                  class="dropdown-menu show-my my-color-hover my-color my-color-hover"
-                >
-                  <li>
-                    <a class="dropdown-item" href="#">Men's Item</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Boy's Item</a></li>
-                  <li><a class="dropdown-item" href="#">Girl's Item</a></li>
-                  <li><a class="dropdown-item" href="#">Kid's Item </a></li>
-                  <li><a class="dropdown-item" href="#">Ladies Item</a></li>
-                  <li><a class="dropdown-item" href="#"></a></li>
+                <ul class="dropdown-menu show-my my-color-hover my-color my-color-hover">
+                  <li><a class="dropdown-item" href="{{route('mensItem')}}">Men's Item</a></li>
+                  <li><a class="dropdown-item" href="{{route('boysItem')}}">Boy's Item</a></li>
+                  <li><a class="dropdown-item" href="{{route('girlsItem')}}">Girl's Item</a></li>
+                  <li><a class="dropdown-item" href="{{route('kidsItem')}}">Kid's Item </a></li>
+                  <li><a class="dropdown-item" href="{{route('ladiesItem')}}">Ladies Item</a></li>
                 </ul>
               </li>
               <li class="nav-item">

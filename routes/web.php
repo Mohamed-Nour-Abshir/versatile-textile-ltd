@@ -37,6 +37,12 @@ Route::get('/gallery',[FrontEndController::class,'gallery'])->name('gallery');
 Route::get('/news',[FrontEndController::class,'news'])->name('news');
 Route::get('/contact',[FrontEndController::class,'contact'])->name('contact');
 
+Route::get('/mens-item',[FrontEndController::class,'mensItem'])->name('mensItem');
+Route::get('/boys-item',[FrontEndController::class,'boysItem'])->name('boysItem');
+Route::get('/girls-item',[FrontEndController::class,'girlsItem'])->name('girlsItem');
+Route::get('/kids-item',[FrontEndController::class,'kidsItem'])->name('kidsItem');
+Route::get('/ladies-item',[FrontEndController::class,'ladiesItem'])->name('ladiesItem');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

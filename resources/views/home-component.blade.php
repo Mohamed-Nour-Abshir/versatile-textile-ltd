@@ -133,24 +133,38 @@
                 <div class="product-images">
                     <div class="product-text">
                     <div class="product-text-child mt-5">
-                        <h4>{{$product->product_type}}</h4>
-                        <p>{{$product->description}}</p>
+                        <h4>
+                            @if ($product->product_type === 'mensItem')
+                                Men's Item
+                            @elseif ($product->product_type === 'boysItem')
+                                Boy's Item
+                            @elseif ($product->product_type === 'girlsItem')
+                                Girl's Item
+                            @elseif ($product->product_type === 'kidsItem')
+                                Kid's Item
+                            @else
+                                Ladies Item
+                            @endif
+                        </h4>
+                        <p>Style Description : {{$product->description}}</p>
+                        <p>Fabric : {{$product->fabric}}</p>
+                        <p>Weight : {{$product->weight}}</p>
                     </div>
                     </div>
-                    <img class="img-fluid" src="{{asset('images/Products')}}/{{$product->image}}" alt="" />
+                    <img class="img-fluid rounded" src="{{asset('images/Products')}}/{{$product->image}}" alt="" />
                 </div>
                 </a>
             </div>
         @endforeach
 
 
-        <div class="row justify-content-center align-items-center g-2 pb-5">
+        {{-- <div class="row justify-content-center align-items-center g-2 pb-5">
           <div class="col">
             <a class="btn btn-dark" href="pages/product/t-shirt.html"
               >view more..</a
             >
           </div>
-        </div>
+        </div> --}}
       </div>
     </div>
   </section>

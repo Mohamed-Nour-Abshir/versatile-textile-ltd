@@ -39,7 +39,19 @@
                                     <td>{{$product->description}}</td>
                                     <td>{{$product->fabric}}</td>
                                     <td>{{$product->weight}}</td>
-                                    <td>{{$product->product_type}}</td>
+                                    <td>
+                                        @if ($product->product_type === 'mensItem')
+                                            Men's Item
+                                        @elseif ($product->product_type === 'boysItem')
+                                            Boy's Item
+                                        @elseif ($product->product_type === 'girlsItem')
+                                            Girl's Item
+                                        @elseif ($product->product_type === 'kidsItem')
+                                            Kid's Item
+                                        @else
+                                            Ladies Item
+                                        @endif
+                                    </td>
                                     <td>
                                         <a href="{{route('products.edit',$product->id)}}" class="btn btn-success btn-circle mb-2"><i class="fas fa-edit"></i></a>
                                         <form action="{{route('products.destroy',$product->id)}}" method="POST">
