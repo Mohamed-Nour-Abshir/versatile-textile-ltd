@@ -22,6 +22,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             TeamSeeder::class,
         ]);
+        $this->call([
+            CompanySeeder::class,
+        ]);
 
 
         // \App\Models\User::factory(10)->create();

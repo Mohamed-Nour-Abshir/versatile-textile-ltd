@@ -78,16 +78,15 @@
                 <i
                   class="fa-solid fa-map-location-dot border border-2 rounded-circle p-2"
                 ></i>
-                <b class="fw-800">Address: </b>151/6, 2nd floor, Gazi Tower,<br>
-                Panthapath Dhaka-1205
+                <b class="fw-800">Address: </b> {{$settings->address}}<br>
               </p>
               <p>
                   <i class="fa-solid fa-phone border border-2 rounded-circle p-2"></i>
-                <b class="fw-800">Phone: </b>+8801934453979
+                <b class="fw-800">Phone: </b>{{$settings->phone}}
               </p>
               <p>
                   <i class="fa-regular fa-envelope border border-2 rounded-circle p-2"></i>
-                <b class="fw-800">Email: </b>info@kaizenitbd.com
+                <b class="fw-800">Email: </b>{{$settings->email}}
               </p>
             </div>
 
@@ -124,16 +123,15 @@
                 <i
                   class="fa-solid fa-map-location-dot border border-2 rounded-circle p-2"
                 ></i>
-                <b class="fw-800">Address: </b>151/6, 2nd floor, Gazi Tower,<br>
-                Panthapath Dhaka-1205
+                <b class="fw-800">Address: </b>{{$settings->address}}
               </p>
               <p>
                   <i class="fa-solid fa-phone border border-2 rounded-circle p-2"></i>
-                <b class="fw-800">Phone: </b>+8801934453979
+                <b class="fw-800">Phone: </b>{{$settings->phone}}
               </p>
               <p>
                   <i class="fa-regular fa-envelope border border-2 rounded-circle p-2"></i>
-                <b class="fw-800">Email: </b>info@kaizenitbd.com
+                <b class="fw-800">Email: </b>{{$settings->email}}
               </p>
             </div>
 

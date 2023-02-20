@@ -10,6 +10,7 @@ use App\Models\HomeSlider;
 use App\Models\News;
 use App\Models\Product;
 use App\Models\Review;
+use App\Models\Setting;
 use App\Models\Team;
 use Illuminate\Http\Request;
 
@@ -42,7 +43,8 @@ class FrontEndController extends Controller
     }
     //Contact Page
     public function contact(){
-        return View('contact-component');
+        $settings = Setting::find(1);
+        return View('contact-component',compact('settings'));
     }
     public function contactUs(Request $request){
         $request->validate([

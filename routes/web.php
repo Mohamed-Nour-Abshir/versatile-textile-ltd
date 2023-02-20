@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ReviewController;
+use App\Http\Controllers\Admin\SettingsController;
 use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -70,6 +71,7 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () 
     Route::resource('galleries',GalleryController::class);
     Route::resource('managesNews', NewsController::class);
     Route::get('contacts',[ContactController::class,'index'])->name('admin.contacts');
+    Route::resource('settings',SettingsController::class);
 });
 
 require __DIR__.'/auth.php';
