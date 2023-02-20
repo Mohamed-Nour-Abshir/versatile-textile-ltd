@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ReviewController;
+use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -61,6 +62,7 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () 
     Route::resource('brand', BrandController::class);
     Route::resource('reviews',ReviewController::class);
     Route::resource('certifications',CertificationController::class);
+    Route::resource('team',TeamController::class);
 });
 
 require __DIR__.'/auth.php';

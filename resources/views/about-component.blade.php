@@ -11,7 +11,7 @@
                 Details
                 </div> -->
                 <h4>
-                varsatile Group was founded by two brothers, Mohammed Abu Tayab
+                Varsatile Group was founded by two brothers, Mohammed Abu Tayab
                 and Mohammad Abul Kalam, in 1972.
                 </h4>
                 <p>
@@ -37,8 +37,8 @@
                 <div>
                 <h4 class="display-5">Our Mission</h4>
                 <hr class="border border-3" />
-                <p>-Creating value while making a difference</p>
-                <p>-Creating value while making a difference</p>
+                <p>- Exceed our customer’s expectations with better quality products.</p>
+                <p>- Effective Quality Management System. </p>
                 </div>
             </div>
             </div>
@@ -53,13 +53,8 @@
                 <div class="text-end pe-5">
                 <h4 class="display-5">Our VISION</h4>
                 <hr class="border border-3" />
-                To be the leader in our wide variety of businesses by nurturing
-                our 5Ps –<br />
-                People-<br />
-                Portfolio-<br />
-                Partners-<br />
-                Profit-<br />
-                Productivity-<br />
+                <p>To Achieve Quality Goal Through Continuous, Improve In Process And Long Term Sustainable Customers Satisfaction.</p>
+                <p>To be the leader in our wide variety of businesses by nurturing our 5Ps, People, Portfolio, Partners, Profit, Productivity</p>
                 </div>
             </div>
 
@@ -110,16 +105,17 @@
             >
             <div class="display-4 text-center pb-4">We Have</div>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-                commodi libero inventore earum facilis molestias deserunt excepturi
-                maxime, nam labore odit quaerat temporibus quisquam architecto totam
-                quas accusantium vel minus!
+                We at Versatile Textiles manufacture nano silver based
+                eco safe Versatile Antimicrobial Agent applicable to all textiles
+                at very economical price. Our versatile Antimicrobial finish for
+                textiles helps in making anti viral, anti bacterial, and anti fungal
+                textile products.
             </p>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-                commodi libero inventore earum facilis molestias deserunt excepturi
-                maxime, nam labore odit quaerat temporibus quisquam architecto totam
-                quas accusantium vel minus!
+                We are serious about creating fresh and hygienic textile products.
+                We exceed our customer’s expectations with better quality products
+                To Achieve Quality Goal Through Continuous, Improve In Process And Long
+                Term Sustainable Customers Satisfaction.
             </p>
             </div>
             <div
@@ -161,16 +157,17 @@
                 >
                 <div class="fs-1">Our Factory</div>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Veritatis commodi libero inventore earum facilis molestias
-                    deserunt excepturi maxime, nam labore odit quaerat temporibus
-                    quisquam architecto totam quas accusantium vel minus!
+                    We at Versatile Textiles manufacture nano silver based eco
+                    safe Versatile Antimicrobial Agent applicable to all textiles
+                    at very economical price. Our versatile Antimicrobial finish
+                    for textiles helps in making anti viral, anti bacterial, and
+                    anti fungal textile products.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Veritatis commodi libero inventore earum facilis molestias
-                    deserunt excepturi maxime, nam labore odit quaerat temporibus
-                    quisquam architecto totam quas accusantium vel minus!
+                    We are serious about creating fresh and hygienic textile products.
+                    We exceed our customer’s expectations with better quality products.
+                    To Achieve Quality Goal Through Continuous, Improve In Process And
+                    Long Term Sustainable Customers Satisfaction.
                 </p>
                 </div>
             </div>
@@ -193,54 +190,23 @@
         data-aos-offset="200"
         data-aos-once="true"
         data-aos-easing="ease-in-sine">
-            <div class="display-4 text-center pb-4 pt-5">Chairman Message</div>
+            <div class="display-4 text-center pb-4 pt-5">Founder Message</div>
             <div class="col-12 col-lg-8 pe-5">
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-                maxime illum quia doloribus, deleniti eius iusto dolores fugit
-                nostrum eum necessitatibus hic quasi, quod inventore architecto
-                natus reiciendis beatae laboriosam.
+                {{$teamFounder->message}}
             </p>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-                illum odio neque sit ipsa? In accusantium nemo, nobis sapiente
-                inventore nesciunt eligendi nostrum tempora temporibus, repellendus
-                earum assumenda atque pariatur! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Minima quisquam repudiandae aliquam
-                perferendis a. Aliquid natus necessitatibus mollitia dignissimos
-                earum itaque esse repellendus voluptates impedit. Iste maiores,
-                nostrum molestiae, placeat dolor molestias atque a similique,
-                voluptates soluta ma earum assumenda atque pariatur! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Minima quisquam
-                repudiandae aliquam perferendis a. Aliquid natus necessitatibus
-                mollitia dignissimos earum itaque esse repellendus voluptates
-                impedit. Iste maiores, nostrum molestiae, placeat dolor molestias
-                atque a similique, voluptates soluta maxime vero voluptatibus
-                facilis pariatur hic fugiat! Enim, commodi. Ut velit libero
-                inventore. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quos optio dicta temporibus fugiat, dolor eaque quam rerum omnis,
-                numquam tempore incidunt fuga animi. Nulla maxime nemo beatae
-                consequatur. Eveniet, aspernatur.
-            </p>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-                illum odio neque sit ipsa? In accusantium nemo, nobis sapiente
-                inventore nesciunt eligendi nostrum tempora temporibus, re optio
-                dicta temporibus fugiat, dolor eaque quam rerum omnis, numquam
-                tempore incidunt fuga animi. Nulla maxime nemo beatae consequatur.
-                Eveniet, aspernatur.
-            </p>
+
             </div>
             <div
-            class="col-12 col-lg-4 d-flex flex-wrap align-self-start pt-3 justify-content-end"
+            class="col-12 col-lg-4 align-self-start pt-3 justify-content-end"
             data-aos="fade-down"
                 data-aos-offset="200"
                 data-aos-once="true"
                 data-aos-easing="ease-in-sine"
             >
-            <img class="img-fluid" src="../images/review/one.jpg" alt="" />
-            <p class="display-6 text-center pt-5">Cho Chung-il</p>
-            <p class="text-center">Chairman Software Ltd.</p>
+            <img class="img-fluid" src="{{asset('images/Team')}}/{{$teamFounder->image}}" alt="" />
+            <p class="text-center pt-5">{{$teamFounder->name}}</p>
+            <p class="text-center">{{$teamFounder->title}}</p>
             </div>
         </div>
         </div>
@@ -255,39 +221,16 @@
             </div>
 
             <div
-                class="col-12 col-lg-4 d-flex flex-wrap align-self-start pt-3 justify-content-start"
+                class="col-12 col-lg-4 align-self-start pt-3 justify-content-start"
             >
-                <img class="img-fluid" src="../images/review/four.jpg" alt="" />
-                <p class="display-6 text-center pt-5">Cho Chung-il</p>
-                <p class="text-center">Chairman Software Ltd.</p>
+                <img class="img-fluid" src="{{asset('images/Team')}}/{{$teamManager->image}}" alt="" />
+                <p class="text-center pt-5">{{$teamManager->title}}</p>
+                <p class="text-center">{{$teamManager->name}}</p>
             </div>
             <div
                 class="col-12 col-lg-8 text-start ps-5 d-flex flex-wrap align-self-start"
             >
-                <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-                maxime illum quia doloribus, deleniti eius iusto dolores fugit
-                nostrum eum necessitatibus hic quasi, quod inventore architecto
-                natus reiciendis beatae laboriosam.
-                </p>
-                <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-                illum odio neque sit ipsa? In accusantium nemo, nobis sapiente
-                inventore nesciunt eligendi nostrum tempora temporibus,
-                repellendus earum assumenda atque pariatur! Lorem ipsum dolor sit
-                amet consentore. Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Quos optio dicta temporibus fugiat, dolor eaque
-                quam rerum omnis, numquam tempore incidunt fuga animi. Nulla
-                maxime nemo beatae consequatur. Eveniet, aspernatur.
-                </p>
-                <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-                illum odio neque sit ipsa? In accusantium nemo, nobis sapiente
-                inventore nesciunt eligendi nostrum tempora temporibus, re optio
-                dicta temporibus fugiat, dolor eaque quam rerum omnis, numquam
-                tempore incidunt fuga animi. Nulla maxime nemo beatae consequatur.
-                Eveniet, aspernatur.
-                </p>
+                <p>{{$teamManager->message}}</p>
             </div>
             </div>
         </div>

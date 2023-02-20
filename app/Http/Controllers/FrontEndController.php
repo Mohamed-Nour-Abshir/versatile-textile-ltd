@@ -7,6 +7,7 @@ use App\Models\Certificate;
 use App\Models\HomeSlider;
 use App\Models\Product;
 use App\Models\Review;
+use App\Models\Team;
 use Illuminate\Http\Request;
 
 class FrontEndController extends Controller
@@ -22,7 +23,9 @@ class FrontEndController extends Controller
     }
     //About Page
     public function about(){
-        return View('about-component');
+        $teamFounder = Team::find(1);
+        $teamManager = Team::find(2);
+        return View('about-component',compact('teamFounder','teamManager'));
     }
     //Gallery Page
     public function gallery(){
