@@ -90,6 +90,14 @@
                     <span>Manage Brands</span></a>
             </li>
             <hr class="sidebar-divider">
+
+            <!-- Nav Item - Review -->
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('reviews.index')}}">
+                    <i class="fas fa-fw fa-star"></i>
+                    <span>Manage Reviews</span></a>
+            </li>
+            <hr class="sidebar-divider">
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>

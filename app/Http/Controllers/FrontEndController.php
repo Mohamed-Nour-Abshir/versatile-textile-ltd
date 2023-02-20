@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Brand;
 use App\Models\HomeSlider;
 use App\Models\Product;
+use App\Models\Review;
 use Illuminate\Http\Request;
 
 class FrontEndController extends Controller
@@ -14,7 +15,8 @@ class FrontEndController extends Controller
         $sliders = HomeSlider::all();
         $products = Product::all();
         $brands = Brand::all();
-        return View('home-component',compact('sliders','products','brands'));
+        $reviews = Review::all();
+        return View('home-component',compact('sliders','products','brands','reviews'));
     }
     //About Page
     public function about(){

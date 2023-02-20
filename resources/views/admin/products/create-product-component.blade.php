@@ -38,7 +38,7 @@
                             <option value="boysItem">Boy's Item</option>
                             <option value="girlsItem">Girl's Item</option>
                             <option value="kidsItem">Kid's Item</option>
-                            <option value="laidesItem">Ladies Item</option>
+                            <option value="ladiesItem">Ladies Item</option>
                         </select>
                         @error('product_type')<span class="text-danger">{{$message}}</span> @enderror <br>
                     </div>

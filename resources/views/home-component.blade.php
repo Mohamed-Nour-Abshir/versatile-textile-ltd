@@ -238,156 +238,33 @@
       <!-- review  -->
 
       <div class="owl-carousel owl-four owl-theme pb-5">
-        <div class="row pt-5">
-          <div class="col">
-            <div class="d-flex w-100 col col">
-              <div class="text pe-2 w-75">
-                <h3 class="display-6">Amazing service</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Sed aliquid laborum enim minima totam cupiditate!
-                </p>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-              </div>
-              <div class="review-img">
-                <a href="">
-                  <img class="img-fluid" src="images/review/two.jpg" alt="" />
-                </a>
-              </div>
+
+        @foreach ($reviews as $review)
+            <div class="row pt-5">
+                <div class="col">
+                <div class="d-flex w-100 col col">
+                    <div class="text pe-2 w-75">
+                    <h3 class="display-6">{{$review->title}}</h3>
+                    <p>
+                        {{$review->description}}
+                    </p>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    </div>
+                    <div class="review-img">
+                    <a href="">
+                        <img class="img-fluid rounded" src="{{asset('images/Reviews')}}/{{$review->image}}" alt="" />
+                    </a>
+                    </div>
+                </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="row pt-5">
-          <div class="col">
-            <div class="d-flex w-100 col">
-              <div class="text pe-2 w-75">
-                <h3 class="display-6">Aweoseme service</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Sed aliquid laborum enim minima totam cupiditate!
-                </p>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </div>
-              <div class="review-img">
-                <a href="">
-                  <img class="img-fluid" src="images/review/one.jpg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row pt-5">
-          <div class="col">
-            <div class="d-flex w-100 col">
-              <div class="text pe-2 w-75">
-                <h3 class="display-6">This is best service</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Sed aliquid laborum enim minima totam cupiditate!
-                </p>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-              </div>
-              <div class="review-img">
-                <a href="">
-                  <img
-                    class="img-fluid shadow"
-                    src="images/review/three.jpg"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row pt-5">
-          <div class="col">
-            <div class="d-flex w-100 col">
-              <div class="text pe-2 w-75">
-                <h3 class="display-6">BEST</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Sed aliquid laborum enim minima totam cupiditate!
-                </p>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </div>
-              <div class="review-img">
-                <a href="">
-                  <img
-                    class="img-fluid shadow"
-                    src="images/review/four.jpg"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row pt-5">
-          <div class="col">
-            <div class="d-flex w-100 col">
-              <div class="text pe-2 w-75">
-                <h3 class="display-6">Recommend</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Sed aliquid laborum enim minima totam cupiditate!
-                </p>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </div>
-              <div class="review-img">
-                <a href="">
-                  <img
-                    class="img-fluid shadow"
-                    src="images/review/five.webp"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row pt-5">
-          <div class="col">
-            <div class="d-flex w-100 col">
-              <div class="text pe-2 w-75">
-                <h3 class="display-6">This is awesome</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Sed aliquid laborum enim minima totam cupiditate!
-                </p>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star text-warning"></i>
-                <i class="fa-solid fa-star-half-stroke text-warning"></i>
-              </div>
-              <div class="review-img">
-                <a href="">
-                  <img class="img-fluid" src="images/review/six.jpg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        @endforeach
+
+
       </div>
     </div>
   </section>
