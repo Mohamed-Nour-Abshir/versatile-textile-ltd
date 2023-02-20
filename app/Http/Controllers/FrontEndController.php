@@ -6,6 +6,7 @@ use App\Models\Brand;
 use App\Models\Certificate;
 use App\Models\Gallery;
 use App\Models\HomeSlider;
+use App\Models\News;
 use App\Models\Product;
 use App\Models\Review;
 use App\Models\Team;
@@ -35,7 +36,8 @@ class FrontEndController extends Controller
     }
     //News Page
     public function news(){
-        return View('news-component');
+        $news = News::all();
+        return View('news-component',compact('news'));
     }
     //Contact Page
     public function contact(){

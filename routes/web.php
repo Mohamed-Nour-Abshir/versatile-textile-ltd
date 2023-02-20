@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\CertificationController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\HomeSliderController;
+use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\Admin\ProductController;
@@ -65,6 +66,7 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () 
     Route::resource('certifications',CertificationController::class);
     Route::resource('team',TeamController::class);
     Route::resource('galleries',GalleryController::class);
+    Route::resource('managesNews', NewsController::class);
 });
 
 require __DIR__.'/auth.php';

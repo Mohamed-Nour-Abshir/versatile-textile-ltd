@@ -129,6 +129,14 @@
                 <span>Manage Gallery</span></a>
         </li>
 
+        <hr class="sidebar-divider">
+        <!-- Nav Item - News -->
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('managesNews.index')}}">
+                <i class="fas fa-fw fa-tv"></i>
+                <span>Manage News</span></a>
+        </li>
+
             <hr class="sidebar-divider">
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
