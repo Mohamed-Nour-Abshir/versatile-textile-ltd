@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Brand;
+use App\Models\Certificate;
 use App\Models\HomeSlider;
 use App\Models\Product;
 use App\Models\Review;
@@ -16,7 +17,8 @@ class FrontEndController extends Controller
         $products = Product::all();
         $brands = Brand::all();
         $reviews = Review::all();
-        return View('home-component',compact('sliders','products','brands','reviews'));
+        $certifications = Certificate::all();
+        return View('home-component',compact('sliders','products','brands','reviews','certifications'));
     }
     //About Page
     public function about(){

@@ -316,94 +316,28 @@
       <!-- certificate  -->
 
       <div class="owl-carousel owl-four owl-theme pb-5">
-        <div class="row pt-5">
-          <div class="col-12 col-lg-12 d-lg-flex">
-            <!-- <div class="d-flex w-100 col-12"> -->
-            <div class="col-12 col-lg-8">
-              <h3 class="display-6">This is certificat of</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-                aliquid laborum enim minima totam cupiditate!
-              </p>
+
+        @foreach ($certifications as $certification)
+            <div class="row pt-5">
+                <div class="col-12 col-lg-12 d-lg-flex">
+                <!-- <div class="d-flex w-100 col-12"> -->
+                <div class="col-12 col-lg-8">
+                    <h3 class="display-6">{{$certification->title}}</h3>
+                    <p>
+                        {{$certification->description}}
+                    </p>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <a href="">
+                        <img class="img-fluid ms-auto me-auto" src="{{asset('images/Certifications')}}/{{$certification->image}}" alt=""/>
+                    </a>
+                </div>
+                <!-- </div> -->
+                </div>
             </div>
-            <div class="col-12 col-lg-4">
-              <a href="">
-                <img
-                  class="img-fluid ms-auto me-auto"
-                  src="images/certificate/bgmea.png"
-                  alt=""
-                />
-              </a>
-            </div>
-            <!-- </div> -->
-          </div>
-        </div>
-        <div class="row pt-5">
-          <div class="col-12 col-lg-12 d-lg-flex">
-            <!-- <div class="d-flex w-100 col-12"> -->
-            <div class="col-12 col-lg-8">
-              <h3 class="display-6">This is certificat of</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-                aliquid laborum enim minima totam cupiditate!
-              </p>
-            </div>
-            <div class="col-12 col-lg-4">
-              <a class="" href="">
-                <img
-                  class="img-fluid ms-auto me-auto w-50"
-                  src="images/certificate/Accord Recognition Letter-Vertex Wear Ltd.jpg"
-                  alt=""
-                />
-              </a>
-            </div>
-            <!-- </div> -->
-          </div>
-        </div>
-        <div class="row pt-5">
-          <div class="col-12 col-lg-12 d-lg-flex">
-            <!-- <div class="d-flex w-100 col-12"> -->
-            <div class="col-12 col-lg-8">
-              <h3 class="display-6">This is certificat of</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-                aliquid laborum enim minima totam cupiditate!
-              </p>
-            </div>
-            <div class="col-12 col-lg-4">
-              <a href="">
-                <img
-                  class="img-fluid ms-auto me-auto"
-                  src="images/certificate/leed.png"
-                  alt=""
-                />
-              </a>
-            </div>
-            <!-- </div> -->
-          </div>
-        </div>
-        <div class="row pt-5">
-          <div class="col-12 col-lg-12 d-lg-flex">
-            <!-- <div class="d-flex w-100 col-12"> -->
-            <div class="col-12 col-lg-8">
-              <h3 class="display-6">This is certificat of</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-                aliquid laborum enim minima totam cupiditate!
-              </p>
-            </div>
-            <div class="col-12 col-lg-4">
-              <a href="">
-                <img
-                  class="img-fluid ms-auto me-auto"
-                  src="images/certificate/wrap.png"
-                  alt=""
-                />
-              </a>
-            </div>
-            <!-- </div> -->
-          </div>
-        </div>
+        @endforeach
+
+
       </div>
     </div>
   </section>
