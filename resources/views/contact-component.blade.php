@@ -8,46 +8,62 @@
             <div class="col-12 col-lg-6 pe-5">
               <img class="img-fluid contact-gif" src="../images/contactus.avif" alt="" />
             </div>
+
             <div class="col-12 col-lg-6">
-              <form action="" class="border border-2 mt-5 rounded-2 p-3">
+                @if (Session::has('message'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>Great!</strong> {{Session::get('message')}}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                    @endif
+              <form action="{{route('contactUs')}}" method="POST" class="border border-2 mt-5 rounded-2 p-3">
+                @csrf
                 <div class="display-4">Get in Touch</div>
                 <div class="mb-3 from-box">
                   <label for="" class="form-label">Name</label>
                   <input
                     type="text"
-                    name=""
+                    name="name"
                     id="input-forom"
-                    class="form-control"
+                    class="form-control @error('name') is-invalid @enderror"
                     placeholder="Enter Your name"
                     aria-describedby="helpId"
                   />
+                  @error('name')<span class="text-danger">{{$message}}</span> @enderror <br>
 
                   <label for="" class="form-label">E-mail</label>
                   <input
                     type="text"
-                    name=""
+                    name="email"
                     id="input-forom"
-                    class="form-control"
+                    class="form-control @error('email') is-invalid @enderror"
                     placeholder="Enter Your mal"
                     aria-describedby="helpId"
                   />
+                  @error('email')<span class="text-danger">{{$message}}</span> @enderror <br>
 
                   <label for="" class="form-label">phpne</label>
                   <input
                     type="text"
-                    name=""
+                    name="phone"
                     id="input-forom"
-                    class="form-control"
+                    class="form-control @error('phone') is-invalid @enderror"
                     placeholder="Enter Your number"
                     aria-describedby="helpId"
                   />
+
+                  @error('phone')<span class="text-danger">{{$message}}</span> @enderror <br>
+
                   <label for="">Message</label>
                   <textarea
-                    name=""
+                    name="message"
                     id="input-forom"
                     cols="30"
                     rows="6"
+                    class="form-control @error('message') is-invalid @enderror"
                   ></textarea>
+
+                  @error('message')<span class="text-danger">{{$message}}</span> @enderror <br>
 
                   <button class="btn btn-dark">Submit</button>
                 </div>

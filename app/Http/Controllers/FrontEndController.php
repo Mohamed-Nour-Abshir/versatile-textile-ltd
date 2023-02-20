@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Brand;
 use App\Models\Certificate;
+use App\Models\Contact;
 use App\Models\Gallery;
 use App\Models\HomeSlider;
 use App\Models\News;
@@ -42,6 +43,21 @@ class FrontEndController extends Controller
     //Contact Page
     public function contact(){
         return View('contact-component');
+    }
+    public function contactUs(Request $request){
+        $request->validate([
+            'name' => 'required',
+            'phone' => 'required',
+            'email' => 'required',
+            'message' => 'required'
+        ]);
+        $contact = new contact();
+        $contact->name = $request->name;
+        $contact->email = $request->email;
+        $contact->phone = $request->phone;
+        $contact->message = $request->message;
+        $contact->save();
+        return redirect()->back()->with('message','Thank you for contacting us we will let you soon');
     }
     //Men's Item Page
     public function mensItem()

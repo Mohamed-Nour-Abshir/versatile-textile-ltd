@@ -137,6 +137,14 @@
                 <span>Manage News</span></a>
         </li>
 
+        <hr class="sidebar-divider">
+        <!-- Nav Item - Contacts -->
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('admin.contacts')}}">
+                <i class="fas fa-fw fa-users"></i>
+                <span>Contacts</span></a>
+        </li>
+
             <hr class="sidebar-divider">
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">

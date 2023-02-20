@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\CertificationController;
+use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\HomeSliderController;
@@ -42,6 +43,7 @@ Route::get('/about',[FrontEndController::class,'about'])->name('about');
 Route::get('/gallery',[FrontEndController::class,'gallery'])->name('gallery');
 Route::get('/news',[FrontEndController::class,'news'])->name('news');
 Route::get('/contact',[FrontEndController::class,'contact'])->name('contact');
+Route::post('/contactUs',[FrontEndController::class,'contactUs'])->name('contactUs');
 
 Route::get('/mens-item',[FrontEndController::class,'mensItem'])->name('mensItem');
 Route::get('/boys-item',[FrontEndController::class,'boysItem'])->name('boysItem');
@@ -67,6 +69,7 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () 
     Route::resource('team',TeamController::class);
     Route::resource('galleries',GalleryController::class);
     Route::resource('managesNews', NewsController::class);
+    Route::get('contacts',[ContactController::class,'index'])->name('admin.contacts');
 });
 
 require __DIR__.'/auth.php';
