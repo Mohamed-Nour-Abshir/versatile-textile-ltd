@@ -30,96 +30,16 @@
             <hr class="border border-2" />
           </div>
           <div class="row justify-content-center align-items-center g-4">
-            <div class="col galery-img m-4">
-              <img
-                class="img-fluid shadow"
-                src="../images/review/one.jpg"
-                alt=""
-              />
-              <div class="fs-4 galery-text p-3">
-                <p class="mb-0">Maniging Derector</p>
-              </div>
-            </div>
-            <div class="col galery-img m-4">
-              <img
-                class="img-fluid shadow"
-                src="../images/review/six.jpg"
-                alt=""
-              />
-              <div class="fs-4 galery-text p-3">
-                <p class="mb-0">Maniging Derector</p>
-              </div>
-            </div>
-            <div class="col galery-img m-4">
-              <img
-                class="img-fluid shadow"
-                src="../images/review/two.jpg"
-                alt=""
-              />
-              <div class="fs-4 galery-text p-3">
-                <p class="mb-0">Maniging Derector</p>
-              </div>
-            </div>
-            <div class="col galery-img m-4">
-              <img
-                class="img-fluid shadow"
-                src="../images/review/two.jpg"
-                alt=""
-              />
-              <div class="fs-4 galery-text p-3">
-                <p class="mb-0">Maniging Derector</p>
-              </div>
-            </div>
-            <div class="col galery-img m-4">
-              <img
-                class="img-fluid shadow"
-                src="../images/review/two.jpg"
-                alt=""
-              />
-              <div class="fs-4 galery-text p-3">
-                <p class="mb-0">Maniging Derector</p>
-              </div>
-            </div>
-            <div class="col galery-img m-4">
-              <img
-                class="img-fluid shadow"
-                src="../images/review/four.jpg"
-                alt=""
-              />
-              <div class="fs-4 galery-text p-3">
-                <p class="mb-0">Maniging Derector</p>
-              </div>
-            </div>
-            <div class="col galery-img m-4">
-              <img
-                class="img-fluid shadow"
-                src="../images/review/five.webp"
-                alt=""
-              />
-              <div class="fs-4 galery-text p-3">
-                <p class="mb-0">Maniging Derector</p>
-              </div>
-            </div>
-            <div class="col galery-img m-4">
-              <img
-                class="img-fluid shadow"
-                src="../images/review/three.jpg"
-                alt=""
-              />
-              <div class="fs-4 galery-text p-3">
-                <p class="mb-0">Maniging Derector</p>
-              </div>
-            </div>
-            <div class="col galery-img m-4">
-              <img
-                class="img-fluid shadow"
-                src="../images/review/two.jpg"
-                alt=""
-              />
-              <div class="fs-4 galery-text p-3">
-                <p class="mb-0">Maniging Derector</p>
-              </div>
-            </div>
+
+            @foreach ($galleries as $gallery)
+                <div class="col galery-img m-4">
+                    <img class="img-fluid shadow" src="{{asset('images/Gallery')}}/{{$gallery->image}}" alt=""/>
+                    <div class="fs-4 galery-text p-3">
+                    <p class="mb-0">{{$gallery->name}}</p>
+                    </div>
+                </div>
+            @endforeach
+
           </div>
         </div>
       </section>

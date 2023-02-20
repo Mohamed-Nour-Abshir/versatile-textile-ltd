@@ -121,6 +121,13 @@
                 </div>
             </div>
         </li>
+        <hr class="sidebar-divider">
+        <!-- Nav Item - Gallery -->
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('galleries.index')}}">
+                <i class="fas fa-fw fa-tv"></i>
+                <span>Manage Gallery</span></a>
+        </li>
 
             <hr class="sidebar-divider">
             <!-- Sidebar Toggler (Sidebar) -->

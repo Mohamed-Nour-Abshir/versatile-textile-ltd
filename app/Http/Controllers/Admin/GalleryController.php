@@ -3,11 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Team;
+use App\Models\Gallery;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 
-class TeamController extends Controller
+class GalleryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,8 @@ class TeamController extends Controller
      */
     public function index()
     {
-        $teams = Team::all();
-        return view('admin.team.team-component',compact('teams'));
+        $galleries = Gallery::all();
+        return view('admin.gallery.gallery-component',compact('galleries'));
     }
 
     /**
@@ -27,7 +27,7 @@ class TeamController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.gallery.create-gallery-component');
     }
 
     /**
@@ -38,7 +38,19 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'image' => 'required',
+        ]);
+        $gallery = new Gallery();
+        $gallery->name = $request->name;
+
+        $imagename = Carbon::now()->timestamp.'.'. $request->image->extension();
+        $request->image->storeAs('Gallery',$imagename);
+        $gallery->image = $imagename;
+
+        $gallery->save();
+        return redirect()->route('galleries.index')->with('message', 'Gallery has been added successfully');
     }
 
     /**
@@ -60,8 +72,8 @@ class TeamController extends Controller
      */
     public function edit($id)
     {
-        $team = Team::find($id);
-        return view('admin.team.edit-team-component',compact('team'));
+        $gallery = Gallery::find($id);
+        return view('admin.gallery.edit-gallery-component',compact('gallery'));
     }
 
     /**
@@ -73,18 +85,16 @@ class TeamController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $team = Team::find($id);
-        $team->name = $request->name;
-        $team->title = $request->title;
-        $team->message = $request->message;
+        $gallery = Gallery::find($id);
+        $gallery->name = $request->name;
 
         if($request->newimage){
             $imagename = Carbon::now()->timestamp.'.'. $request->newimage->extension();
-            $request->newimage->storeAs('Team',$imagename);
-            $team->image = $imagename;
+            $request->newimage->storeAs('Gallery',$imagename);
+            $gallery->image = $imagename;
         }
-        $team->update();
-        return redirect()->route('team.index')->with('message', 'Team has been updated successfully');
+        $gallery->update();
+        return redirect()->route('galleries.index')->with('message', 'Gallery has been updated successfully');
     }
 
     /**
@@ -95,8 +105,8 @@ class TeamController extends Controller
      */
     public function destroy($id)
     {
-        $team  = Team::find($id);
-        $team->delete();
-        return redirect()->route('team.index')->with('message', 'Team has been deleted successfully');
+        $gallery = Gallery::find($id);
+        $gallery->delete();
+        return redirect()->route('galleries.index')->with('message', 'Gallery has been deleted successfully');
     }
 }

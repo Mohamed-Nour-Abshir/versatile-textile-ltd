@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Brand;
 use App\Models\Certificate;
+use App\Models\Gallery;
 use App\Models\HomeSlider;
 use App\Models\Product;
 use App\Models\Review;
@@ -29,7 +30,8 @@ class FrontEndController extends Controller
     }
     //Gallery Page
     public function gallery(){
-        return View('gallery-component');
+        $galleries = Gallery::all();
+        return View('gallery-component',compact('galleries'));
     }
     //News Page
     public function news(){
