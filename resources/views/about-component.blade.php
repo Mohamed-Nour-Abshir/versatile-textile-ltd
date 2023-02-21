@@ -127,22 +127,22 @@
             >
             <div class="col-12 col-lg-3 shadow">
                 <i class="fa-solid fa-ranking-star fa-2x"></i>
-                <h4 class="display-4 fw-semibold">400 +</h4>
+                <h4 class="display-4 fw-semibold">{{$factory->unit}}</h4>
                 <p>Manufacturing unit!!!</p>
             </div>
             <div class="col-12 col-lg-3 shadow">
                 <i class="fa-solid fa-trophy fa-2x"></i>
-                <h4 class="display-4 fw-semibold">9 +</h4>
+                <h4 class="display-4 fw-semibold">{{$factory->awrads}}</h4>
                 <p>Awards</p>
             </div>
             <div class="col-12 col-lg-3 shadow">
                 <i class="fa-solid fa-people-roof fa-2x"></i>
-                <h4 class="display-4 fw-semibold">40K +</h4>
+                <h4 class="display-4 fw-semibold">{{$factory->employees}}</h4>
                 <p>Employees</p>
             </div>
             <div class="col-12 col-lg-3 shadow">
                 <i class="fa-solid fa-industry fa-2x"></i>
-                <h4 class="display-4 fw-semibold">37 +</h4>
+                <h4 class="display-4 fw-semibold">{{$factory->factories}}</h4>
                 <p>Total Factories</p>
             </div>
             </div>

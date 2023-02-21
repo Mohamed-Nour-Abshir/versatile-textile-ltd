@@ -59,22 +59,22 @@
       >
         <div class="col-12 col-lg-3 shadow">
           <i class="fa-solid fa-ranking-star fa-2x"></i>
-          <h4 class="display-4 fw-semibold">400 +</h4>
+          <h4 class="display-4 fw-semibold">{{$factory->unit}}</h4>
           <p>Manufacturing unit!!!</p>
         </div>
         <div class="col-12 col-lg-3 shadow">
           <i class="fa-solid fa-trophy fa-2x"></i>
-          <h4 class="display-4 fw-semibold">9 +</h4>
+          <h4 class="display-4 fw-semibold">{{$factory->awrads}}</h4>
           <p>Awards</p>
         </div>
         <div class="col-12 col-lg-3 shadow">
           <i class="fa-solid fa-people-roof fa-2x"></i>
-          <h4 class="display-4 fw-semibold">40K +</h4>
+          <h4 class="display-4 fw-semibold">{{$factory->employees}}</h4>
           <p>Employees</p>
         </div>
         <div class="col-12 col-lg-3 shadow">
           <i class="fa-solid fa-industry fa-2x"></i>
-          <h4 class="display-4 fw-semibold">37 +</h4>
+          <h4 class="display-4 fw-semibold">{{$factory->factories}}</h4>
           <p>Total Factories</p>
         </div>
       </div>
@@ -188,10 +188,10 @@
         data-aos-once="true"
         data-aos-easing="ease-in-sine"
       >
-        <div class="owl-carousel col owl-two owl-theme">
+        {{-- <div class="owl-carousel col owl-two owl-theme">
 
             @foreach ($brands as $brand)
-                <div class="item clint rounded my-color-hover col p-5 border border-light my-color-hover position-relative">
+                <div class="item clint rounded my-color-hover col p-5 my-color-hover position-relative">
                     <div class="d-flex justify-content-center">
                     <img src="{{asset('images/Brand')}}/{{$brand->image}}" alt="" />
                     <a class="position-absolute text-decoration-none" href=""
@@ -202,12 +202,12 @@
             @endforeach
 
 
-        </div>
+        </div> --}}
       </div>
       <div class="row justify-content-center text-center gap-5 p-1" data-aos="fade-right" data-aos-offset="300" data-aos-once="true" data-aos-easing="ease-in-sine">
         <div class="owl-carousel owl-three owl-theme">
             @foreach ($brands as $item)
-                <div class="item clint rounded my-color-hover col p-5 border border-light position-relative">
+                <div class="item clint rounded col position-relative">
                 <div class="d-flex justify-content-center">
                     <img class="bg-light img-fluid" src="{{asset('images/Brand')}}/{{$item->image}}" alt="" >
                     <a class="position-absolute text-decoration-none" href=""><h3 class="display-6">{{$item->name}}</h3></a>

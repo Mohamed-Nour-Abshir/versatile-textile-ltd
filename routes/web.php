@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\CertificationController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\FactoryInformationController;
 use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\HomeSliderController;
 use App\Http\Controllers\Admin\NewsController;
@@ -71,6 +72,7 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () 
     Route::resource('galleries',GalleryController::class);
     Route::resource('managesNews', NewsController::class);
     Route::get('contacts',[ContactController::class,'index'])->name('admin.contacts');
+    Route::resource('factory',FactoryInformationController::class);
     Route::resource('settings',SettingsController::class);
 });
 

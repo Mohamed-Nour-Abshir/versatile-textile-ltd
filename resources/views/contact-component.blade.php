@@ -118,7 +118,7 @@
                 </div>
 
             <div class="col mb-auto -5">
-              <div class="display-5">Chitagong Office</div>
+              <div class="display-5">Factory Office</div>
               <p>
                 <i
                   class="fa-solid fa-map-location-dot border border-2 rounded-circle p-2"

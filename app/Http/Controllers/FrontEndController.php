@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Brand;
 use App\Models\Certificate;
 use App\Models\Contact;
+use App\Models\FactoryInfo;
 use App\Models\Gallery;
 use App\Models\HomeSlider;
 use App\Models\News;
@@ -23,13 +24,15 @@ class FrontEndController extends Controller
         $brands = Brand::all();
         $reviews = Review::all();
         $certifications = Certificate::all();
-        return View('home-component',compact('sliders','products','brands','reviews','certifications'));
+        $factory = FactoryInfo::find(1);
+        return View('home-component',compact('sliders','products','brands','reviews','certifications','factory'));
     }
     //About Page
     public function about(){
         $teamFounder = Team::find(1);
         $teamManager = Team::find(2);
-        return View('about-component',compact('teamFounder','teamManager'));
+        $factory = FactoryInfo::find(1);
+        return View('about-component',compact('teamFounder','teamManager','factory'));
     }
     //Gallery Page
     public function gallery(){

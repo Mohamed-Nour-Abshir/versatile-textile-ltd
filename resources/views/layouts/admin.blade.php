@@ -118,6 +118,7 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Team:</h6>
                     <a class="collapse-item" href="{{route('team.index')}}">Managers</a>
+                    <a class="collapse-item" href="{{route('factory.index')}}">Factory Info</a>
                 </div>
             </div>
         </li>

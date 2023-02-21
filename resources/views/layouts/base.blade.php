@@ -207,11 +207,12 @@
             >
               <ul>
                 <h4 class="">Contact info</h4>
-                <p>Commrical office:</p>
-                <li>Vertex Group</li>
-                <li>Unique Trade Centre, (Level-17, South),</li>
-                <li>8 Panthapath, Kawranbazar C/A,</li>
-                <li>Dhaka-1215, Bangladesh</li>
+                <p>Head Office:</p>
+                <li>Floor-6, House-576 </li>
+                <li>Road-8, Avenue-4 </li>
+                <li>Mirpur DOHS</li>
+                <li>Dhaka-1216</li>
+                <li>Bangladesh.</li>
               </ul>
             </div>
             <div
@@ -222,13 +223,12 @@
               data-aos-easing="ease-in-sine"
             >
               <ul>
-                <h4>Factory office</h4>
-                <li>Vertex Wear Limited</li>
-                <li>Dress World Ltd</li>
-                <li>Neo Fashions Ltd</li>
-                <li>Vorari, Rajfulbaria, Tetuljhora,</li>
-                <li>Savar, Dhaka, Bangladesh</li>
-                <li>Email: info@vertexgroup.com.bd</li>
+                <h4>Factory Office :</h4>
+                <li>89/2 Chaydana, Degerchala, </li>
+                <li>National University, Gazipur , </li>
+                <li>Bangladesh., Dhaka, Bangladesh</li>
+                <li>Email: info@versatile.net</li>
+                <li>Phone : +8801762686627</li>
               </ul>
             </div>
           </div>
@@ -236,7 +236,7 @@
         <hr />
         <div class="row justify-content-center align-items-center g-2 p-4">
           <div class="col text-center">
-           <a href="https://github.com/saidurrahmanmisket/"> <u> Dev</u>elop </a>by <a href="https://kaizenitbd.com/"><u> Kaizen It</u> LTD</a>
+           <a href="https://github.com/saidurrahmanmisket/"> <u> Dev</u>elop </a>by <a href="https://kaizenitbd.com/"><u> Kaizen IT</u> Ltd</a>
             <br />
             <p>&#169;All Rights Reserved</p>
           </div>
