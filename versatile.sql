@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 20, 2023 at 01:51 PM
+-- Generation Time: Feb 21, 2023 at 08:15 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -40,8 +40,8 @@ CREATE TABLE `brands` (
 --
 
 INSERT INTO `brands` (`id`, `name`, `image`, `created_at`, `updated_at`) VALUES
-(2, 'T-shirt', '1676547770.jpg', '2023-02-16 05:36:14', '2023-02-16 05:42:57'),
-(3, 'Pants', '1676548076.jpg', '2023-02-16 05:47:56', '2023-02-16 05:47:56');
+(2, NULL, '1676956109.jpg', '2023-02-16 05:36:14', '2023-02-20 23:08:30'),
+(3, NULL, '1676956415.jpg', '2023-02-16 05:47:56', '2023-02-20 23:14:34');
 
 -- --------------------------------------------------------
 
@@ -63,7 +63,8 @@ CREATE TABLE `certificates` (
 --
 
 INSERT INTO `certificates` (`id`, `title`, `description`, `image`, `created_at`, `updated_at`) VALUES
-(2, 'Test Certification', 'Test Certification lhfdkash\r\n lkjlkasjdfas\r\n jhnasklfsd\r\nasfjdsoifsdhafuoihsdfhsodhfsdg\r\nsdfosdgfhsdohgoisdhjfosjfsd kahf ksafhsd ikshfksd \r\nswfhsodjfsd olhsfalknsd ;oihjsdfojsd opisuerfsdhfl fsfsdfg', '1676874254.jpg', '2023-02-20 00:24:14', '2023-02-20 00:24:14');
+(2, 'Accord Recognation Certificate - Dress World Ltd', 'Test Certification lhfdkash\r\n lkjlkasjdfas\r\n jhnasklfsd\r\nasfjdsoifsdhafuoihsdfhsodhfsdg\r\nsdfosdgfhsdohgoisdhjfosjfsd kahf ksafhsd ikshfksd \r\nswfhsodjfsd olhsfalknsd ;oihjsdfojsd opisuerfsdhfl fsfsdfg', '1676957960.jpg', '2023-02-20 00:24:14', '2023-02-20 23:42:09'),
+(3, 'Membership Certificate', 'Membership Certificate of Bangladesh Garment Manufacturers and Exporters Association', '1676958429.png', '2023-02-20 23:47:09', '2023-02-20 23:47:09');
 
 -- --------------------------------------------------------
 
@@ -89,6 +90,29 @@ INSERT INTO `contacts` (`id`, `name`, `email`, `phone`, `message`, `created_at`,
 (1, 'MohamedNur Abshir', 'admin@gmail.com', '+252617485970', 'sadfsafsdf', '2023-02-20 05:27:16', '2023-02-20 05:27:16'),
 (2, 'MohamedNur Abshir', 'mnor32779@gmail.com', '+8801792636546', 'ZDXZCZX', '2023-02-20 05:28:27', '2023-02-20 05:28:27'),
 (3, 'Mohamed Nour', 'info@versatile.com', '+8801730931984', 'dsadas', '2023-02-20 05:31:36', '2023-02-20 05:31:36');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `factory_infos`
+--
+
+CREATE TABLE `factory_infos` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `unit` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `awrads` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `employees` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `factories` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `factory_infos`
+--
+
+INSERT INTO `factory_infos` (`id`, `unit`, `awrads`, `employees`, `factories`, `created_at`, `updated_at`) VALUES
+(1, '700K +', '200 +', '7K +', '15 +', '2023-02-21 06:44:44', '2023-02-21 00:43:58');
 
 -- --------------------------------------------------------
 
@@ -125,7 +149,12 @@ CREATE TABLE `galleries` (
 --
 
 INSERT INTO `galleries` (`id`, `name`, `image`, `created_at`, `updated_at`) VALUES
-(5, 'Founder', '1676886297.jpg', '2023-02-20 03:44:57', '2023-02-20 03:45:51');
+(5, 'Founder', '1676886297.jpg', '2023-02-20 03:44:57', '2023-02-20 03:45:51'),
+(6, 'Display Room', '1676959219.jpg', '2023-02-21 00:00:19', '2023-02-21 00:00:19'),
+(7, 'Sewing Floor', '1676959271.jpg', '2023-02-21 00:01:11', '2023-02-21 00:01:11'),
+(8, 'Ironing', '1676959321.jpg', '2023-02-21 00:02:01', '2023-02-21 00:02:01'),
+(9, 'Finishing', '1676959369.jpg', '2023-02-21 00:02:49', '2023-02-21 00:02:49'),
+(10, 'Finished Fabric Checking', '1676959550.jpg', '2023-02-21 00:05:50', '2023-02-21 00:05:50');
 
 -- --------------------------------------------------------
 
@@ -184,7 +213,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (20, '2023_02_20_090304_create_galleries_table', 8),
 (21, '2023_02_20_095246_create_news_table', 9),
 (22, '2023_02_20_111049_create_contacts_table', 10),
-(23, '2023_02_20_114500_create_settings_table', 11);
+(23, '2023_02_20_114500_create_settings_table', 11),
+(24, '2023_02_21_062421_create_factory_infos_table', 12);
 
 -- --------------------------------------------------------
 
@@ -355,7 +385,7 @@ CREATE TABLE `teams` (
 
 INSERT INTO `teams` (`id`, `name`, `title`, `message`, `image`, `created_at`, `updated_at`) VALUES
 (1, 'Mr. Abdul Kalam Azad', 'Founder', 'A visionary Textile Engineer and a successful Textile Professional. Established himself as a specialist business personal in the field of Textile and Garments business. His mission is to provide quality products to the customers and ensuring benefit to the employees and the society at large. Mr. Abul Kalam Azad views his business as a means of financial and moral gains by which can serve the society to achieve SDG for the sake of human civilization.', '1676881842.jpg', NULL, '2023-02-20 02:30:42'),
-(2, 'Test', 'Manager', 'sadsadfsacsdfdsfg \r\ndsfsdfsdgmsdlkfgsd\r\n sdfsdjkhjsd fsdkjbfkjsd kbsnfdkkj kjbnfksd\r\njksdfkljnsdjk oksjfo iuhyit iafsk', '1676882039.jpg', NULL, '2023-02-20 02:33:59');
+(2, 'Bezu Ahmed', 'Manager', 'sadsadfsacsdfdsfg \r\ndsfsdfsdgmsdlkfgsd\r\n sdfsdjkhjsd fsdkjbfkjsd kbsnfdkkj kjbnfksd\r\njksdfkljnsdjk oksjfo iuhyit iafsk', '1676962898.jpg', NULL, '2023-02-21 01:01:38');
 
 -- --------------------------------------------------------
 
@@ -383,7 +413,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `role`, `email_verified_at`, `password`, `phone`, `address`, `remember_token`, `created_at`, `updated_at`) VALUES
 (5, 'Versatile', 'info@versatile.com', 1, NULL, '$2y$10$5UnpiCoV4Ly9vcCl65wJ7uu74RyNBHL0d/dy.fHkYmvB9aPqy/DIK', '01713044093', '89/2, Chaydana, Degerchala Road, National University, Gazipur', NULL, NULL, '2023-02-16 00:31:39'),
-(6, 'Nour', 'mnor32779@gmail.com', 0, NULL, '$2y$10$R28VCkvI4qW5/5BHjw4Ew.rP/VjgSx03HWb5DVr7UKmFCV/QjpzN2', '01730931984', 'panthapath', NULL, '2023-02-14 06:07:41', '2023-02-15 00:33:53');
+(6, 'Nour', 'mnor32779@gmail.com', 0, NULL, '$2y$10$R28VCkvI4qW5/5BHjw4Ew.rP/VjgSx03HWb5DVr7UKmFCV/QjpzN2', '01730931984', 'panthapath', NULL, '2023-02-14 06:07:41', '2023-02-15 00:33:53'),
+(14, 'test', 'info@temobd.com', 0, NULL, '$2y$10$lyPptZqQiU.fLPIt2qr3BOagpe0wTByWSywDhinqVC4RrLPE3wFnO', '01730931984', 'panthapath', NULL, '2023-02-21 00:07:25', '2023-02-21 00:07:25');
 
 --
 -- Indexes for dumped tables
@@ -405,6 +436,12 @@ ALTER TABLE `certificates`
 -- Indexes for table `contacts`
 --
 ALTER TABLE `contacts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `factory_infos`
+--
+ALTER TABLE `factory_infos`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -497,13 +534,19 @@ ALTER TABLE `brands`
 -- AUTO_INCREMENT for table `certificates`
 --
 ALTER TABLE `certificates`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `factory_infos`
+--
+ALTER TABLE `factory_infos`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -515,7 +558,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `galleries`
 --
 ALTER TABLE `galleries`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `home_sliders`
@@ -527,7 +570,7 @@ ALTER TABLE `home_sliders`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `news`
@@ -569,7 +612,7 @@ ALTER TABLE `teams`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

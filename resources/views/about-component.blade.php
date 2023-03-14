@@ -11,15 +11,10 @@
                 Details
                 </div> -->
                 <h4>
-                Varsatile Group was founded by two brothers, Mohammed Abu Tayab
-                and Mohammad Abul Kalam, in 1972.
+                    Versatile has started it's journey in 2012 and till date, it has resulted in a conglomerate of 5 concerns.
                 </h4>
                 <p>
-                Inspired by their father, Mir Ahmed Sowdagar’s success, they
-                maintained the trading business even after he passed away.
-                However, they were still on the lookout for new business
-                opportunities to serve the country better. Today, T.K. Group is
-                one of the biggest conglomerates of Bangladesh.
+                    Versatile has started it's journey in 2012 and till date, it has resulted in a conglomerate of 5 concerns. Skilled and dedicated workforce of more than 1500 employees of Versatile Textile is the enormous strength of the company. Presently it's annual turnover is more than 20 Million USD, supplies best quality apparels to world renowned retailers. Versatile is upholding its reputation to the customers by providing services and also constantly involved with sustainable activities focusing on social and environmental aspects.
                 </p>
             </div>
             </div>
@@ -49,8 +44,12 @@
             data-aos-once="true"
             data-aos-easing="ease-in-sine"
             >
+            <div class="col-12 col-lg-2">
+                <img class="img-fluid" src="../images/vision.png" alt="" />
+            </div>
+            
             <div class="col-12 col-lg-10 ps-5">
-                <div class="text-end pe-5">
+                <div class="text-start pe-5">
                 <h4 class="display-5">Our VISION</h4>
                 <hr class="border border-3" />
                 <p>To Achieve Quality Goal Through Continuous, Improve In Process And Long Term Sustainable Customers Satisfaction.</p>
@@ -58,9 +57,6 @@
                 </div>
             </div>
 
-            <div class="col-12 col-lg-2">
-                <img class="img-fluid" src="../images/vision.png" alt="" />
-            </div>
             </div>
             <div
             class="row justify-content-center align-items-start g-2 pt-5 pb-5"
@@ -190,27 +186,30 @@
         data-aos-offset="200"
         data-aos-once="true"
         data-aos-easing="ease-in-sine">
-            <div class="display-4 text-center pb-4 pt-5">Founder Message</div>
-            <div class="col-12 col-lg-8 pe-5">
-            <p>
-                {{$teamFounder->message}}
-            </p>
-
-            </div>
+            <h1 class="text-center pb-4 pt-5">Versatile Founder’s Profile</h1>
             <div
-            class="col-12 col-lg-4 align-self-start pt-3 justify-content-end"
+            class="col-12 col-lg-4 align-self-start pt-3 justify-content-start"
             data-aos="fade-down"
                 data-aos-offset="200"
                 data-aos-once="true"
                 data-aos-easing="ease-in-sine"
             >
-            <img class="img-fluid" src="{{asset('images/Team')}}/{{$teamFounder->image}}" alt="" />
-            <p class="text-center pt-5">{{$teamFounder->name}}</p>
-            <p class="text-center">{{$teamFounder->title}}</p>
+                <img class="img-fluid mb-2" src="{{asset('images/Team')}}/{{$teamFounder->image}}" alt="" />
+                <div class="text-center"><b>{{$teamFounder->name}}</b></div>
+                <p class="text-center"><b>{{$teamFounder->title}}</b></p>
             </div>
+
+            <div class="col-12 col-lg-8 mb-5 ps-4">
+                <h3>{{$teamFounder->name}}</h3>
+            <p>
+                {{$teamFounder->message}}
+            </p>
+
+            </div>
+
         </div>
         </div>
-        <section class="bg-my-dark pb-5">
+        {{-- <section class="bg-my-dark pb-5">
         <div class="container" data-aos="fade-left"
         data-aos-offset="200"
         data-aos-once="true"
@@ -234,7 +233,7 @@
             </div>
             </div>
         </div>
-        </section>
+        </section> --}}
 
         <!-- content end here --------------------------------------- -->
 @endsection

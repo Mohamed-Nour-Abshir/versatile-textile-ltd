@@ -1,10 +1,10 @@
 @extends('layouts.base')
 @section('content')
 <!-- hero section start  -->
-<main class=" ">
+<main class="">
     <div class="owl-carousel owl-one owl-theme">
         @foreach ($sliders as $slider)
-            <div class="item item-one" style='background-image: url("{{asset('images/HomeSliders')}}/{{$slider->image}}") ;'>
+            <div class="item item-one" style='background-color:#fff; background-image: url("{{asset('images/HomeSliders')}}/{{$slider->image}}") ;'>
                 <div class="transparent-dark h-100">
                 <div class="container">
                     <!-- <div class="container-fluid"> -->

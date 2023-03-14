@@ -72,8 +72,14 @@
           </div>
           <div class="row pt-5 justify-content-center align-items-center g-2">
 
-            <div class="col mb-auto pe-5">
-              <div class="display-5">Dhaka Office</div>
+
+            <div class="col ">
+                <iframe class="rounded pe-5" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7291.7724543663235!2d90.384938!3d23.964463!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755db4fc1a454df%3A0x4a169d8a4c88d218!2sVersatile%20Textiles%20Ltd.!5e0!3m2!1sen!2sus!4v1676972996876!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+
+            <div class="col mb-auto -5 mt-5">
+              <div class="display-5">OFFICE & Factory</div>
+              <hr class="border border-light" />
               <p>
                 <i
                   class="fa-solid fa-map-location-dot border border-2 rounded-circle p-2"
@@ -90,48 +96,35 @@
               </p>
             </div>
 
-            <div class="col ">
-              <iframe class="rounded "
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9058862376114!2d90.38469101445588!3d23.75073529468154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9ac5fce59cb%3A0xfd3e17cbaa2f7805!2sKaizen%20IT%20Ltd.!5e0!3m2!1sbn!2sbd!4v1672835487815!5m2!1sbn!2sbd"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+
           </div>
           <div class="row pt-5 justify-content-center align-items-center g-2">
 
 
               <div class="col ">
-                  <iframe class="rounded pe-5 "
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9058862376114!2d90.38469101445588!3d23.75073529468154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9ac5fce59cb%3A0xfd3e17cbaa2f7805!2sKaizen%20IT%20Ltd.!5e0!3m2!1sbn!2sbd!4v1672835487815!5m2!1sbn!2sbd"
-                    width="600"
-                    height="450"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
+                <iframe class="rounded pe-5" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7291.7724543663235!2d90.384938!3d23.964463!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755db4fc1a454df%3A0x4a169d8a4c88d218!2sVersatile%20Textiles%20Ltd.!5e0!3m2!1sen!2sus!4v1676972996876!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
-            <div class="col mb-auto -5">
-              <div class="display-5">Factory Office</div>
+            <div class="col mb-auto -5 mt-5">
+              <div class="display-5">Head Office :</div>
+              <hr class="border border-light" />
               <p>
                 <i
                   class="fa-solid fa-map-location-dot border border-2 rounded-circle p-2"
                 ></i>
-                <b class="fw-800">Address: </b>{{$settings->address}}
+                <b class="fw-800">Address: </b>Floor-6, House-576
+                Road-8, Avenue-4
+                Mirpur DOHS
+                Dhaka-1216
+                Bangladesh.
               </p>
               <p>
                   <i class="fa-solid fa-phone border border-2 rounded-circle p-2"></i>
-                <b class="fw-800">Phone: </b>{{$settings->phone}}
+                <b class="fw-800">Phone: </b>+88 01762 68 66 27
               </p>
               <p>
                   <i class="fa-regular fa-envelope border border-2 rounded-circle p-2"></i>
-                <b class="fw-800">Email: </b>{{$settings->email}}
+                <b class="fw-800">Email: </b> info@versatilebd.net
               </p>
             </div>
 
